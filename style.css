@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 142px;
+}
+
+/* Header Styling */
+header{
+    background-color: #20A39E;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    border-bottom: 2px solid#23001E;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#branding .logo{
+    font-size: 36px;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav-items li{
+    display: inline;
+    margin-right: 12px;
+}
+
+.nav-items li a{
+    font-weight: bold;
+}
+
+.nav-items li a:hover{
+    color: #23001E;
+}
+
+/* Hero styling */
+#hero{
+   /* background-color: lightcoral;  */
+   /* background: linear-gradient(to left, #EF5B5B, #A4A9AD ); */
+   background-image: url('bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 360px;
+   padding: 30px;
+}
+
+#hero h1{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#hero p{
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Newsletter styling */
+#newsletter{
+    background-color: #20A39E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#newsletter h2{
+    color: white;
+}
+
+#newsletter .subscribe-button{
+    background-color: #FFBA49;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+}
+
+#newsletter .subscribe-button:hover{
+    background-color: #23001E;
+}
+
+/* Input Styling */
+
+input[type=email]{
+    outline: none;
+    padding: 5px;
+}
+
+.aside-form .input{
+    outline: none;
+    padding: 5px;
+}
+
+/* Display error styling */
+#display-error{
+    /* background-color: #EF5B5B; */
+    display: block;
+    padding: 5px;
+    width: 200px;
+    margin-left: 40px;
+    font-size: 14px;
+    color: rgb(63, 30, 30);
+}
+
+#quote-error{
+    /* background-color: #EF5B5B; */
+    display: block;
+    padding: 5px;
+    width: 200px;
+    margin-left: 40px;
+    font-size: 14px;
+    color: rgb(63, 30, 30);
+}
+
+
+/* Image boxes styling */
+#image-boxes{
+    display: flex;
+    padding: 20px;
+}
+
+#image-boxes .box{
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Footer styling */
+footer{
+    background-color: #20A39E;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About Section Styling*/
+#about-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+#about-section h2{
+    margin-bottom: 20px;
+}
+
+#about-section .about-content{
+    width: 60%;
+    padding: 20px;
+}
+
+#about-section .aside-content{
+    width: 30%;
+    /* height: 400px; */
+    padding: 20px;
+}
+
+#about-section .about-bg{
+    background-color: #EF5B5B;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Service section styling */
+#service-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#service-section .service-content{
+    width: 60%;
+    padding: 20px;
+}
+
+#service-section .aside-form{
+    background-color: #EF5B5B;
+    width: 30%;
+    height: 500px;
+    padding: 20px;
+}
+
+.service-content .service-box{
+    background-color: #aaa;
+    box-shadow: 0px 2px 5px #aaa;
+    margin: 12px;
+    padding: 20px;
+}
+
+.service-box h3{
+    margin-bottom: 12px;
+}
+
+.service-box p{
+    margin-bottom: 12px;
+}
+
+.aside-form h2{
+    color: white;
+    margin-bottom: 12px;
+}
+
+.aside-form .input-group{
+    margin-bottom: 12px;
+}
+
+.aside-form .quote-button{
+    background-color: #FFBA49;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+}
+
+.aside-form .quote-button:hover{
+    background-color: #23001E;
+}
+
+
+/* RESPONSIVENESS STYLING */
+@media (max-width: 320px){
+    body{
+        margin: 0;
+        width: 100%;
+    }
+
+    #hero h1{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    #hero p{
+        padding: 0;
+    }
+
+    #branding .logo{
+        font-size: 24px;
+    }
+
+    #newsletter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #newsletter h2{
+        font-size: 18px !important;
+        margin-bottom: 12px;
+        padding: 8px;
+    }
+
+    #newsletter .subscribe-button{
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    #image-boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #image-boxes .box{
+        margin-top: 12px;
+    }
+
+    #about-section{
+        flex-direction: column;
+    }
+
+    #about-section .about-content{
+        width: 100%;
+        padding: 20px;
+    }
+
+    #about-section .aside-content{
+        width: 100%;
+        padding: 20px;
+    }
+
+    #service-section{
+        flex-direction: column;
+    }
+
+    #service-section .service-content{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #service-section .aside-form{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    body{
+        margin: 0;
+        width: 100%;
+    }
+
+    #hero h1{
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #newsletter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #newsletter h2{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    #image-boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #image-boxes .box{
+        margin-top: 12px;
+    }
+
+    #about-section{
+        flex-direction: column;
+    }
+
+    #about-section .about-content{
+        width: 100%;
+        padding: 20px;
+    }
+
+    #about-section .aside-content{
+        width: 100%;
+        padding: 20px;
+    }
+
+    #service-section{
+        flex-direction: column;
+    }
+
+    #service-section .service-content{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #service-section .aside-form{
+        width: 100%;
+        padding: 20px;
+    }
+
+}
